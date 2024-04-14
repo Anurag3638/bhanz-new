@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="W"
+    />
+  
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <!-- <link rel="apple-touch-icon" href=""/> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>B-HANZ</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo3.png" alt="B-HANZ" width="125px" /></a>
+        </div>
+        <nav>
+          <input type="text" id="search" name="search" placeholder="Search..">       
+<button type="submit" style="background-color: #ff523b;">Go</button>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>        
+<a href="cart.html"></a>
+        <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" style="background-color:#ffffff; alt="" width="30px" height="30px" /></a>
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+       <h3><span>Discount: 20% off of our products </span></h3>
+        <a href="product.html" class="btn">Explore Now &#8594;</a>
+        <select>
+          <option value="">Default Shorting</option>
+          <option value="">Sort by price</option>
+          <option value="">Sort by popularity</option>
+          <option value="">Sort by rating</option>
+          <option value="">Sort by sale</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="img/product/ghodi.png" alt="" />
+          <h4>Hugo Boss Hoodie</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹2500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="img/product/nr.png" alt="" />
+          <h4>US Polo Shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹1500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="img/product/annu2.png" alt="" />
+          <h4>Arrow Printed Shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>₹1200.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="img/product/ghodi2.png" alt="" />
+          <h4>Red Shirt Pantaloon Shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹4000.00</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="img/product/annu.png" alt="" />
+          <h4>Printed Check Shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹1200.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="img/product/nr2.png" alt="" />
+          <h4>White Printed Kurta</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹1500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/KsMVr26/product-3.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="https://i.ibb.co/bQ5t8bR/product-5.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/vVpTyBD/product-6.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/hR5FGwH/product-7.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/QfCgdXZ/product-8.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="https://i.ibb.co/nw5xZwk/product-9.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/9HCsmjf/product-10.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/JQ2MBHR/product-11.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+
+        <div class="col-4">
+          <img src="https://i.ibb.co/nRZMs6Y/product-12.jpg" alt="" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>₹500.00</p>
+        </div>
+      </div>
+
+      <div class="page-btn">
+        <span>1</span>   
+<a href="page2.html"><span>2</span> </a>
+<a href="page3.html"> <span>3</span></a>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iso mobile phone.</p>
+            <div class="app-logo">
+              <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+              <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="img/logo.png" alt="" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href ="">Facebook</a></li>
+              <li><a href ="">Twitter</a></li>
+              <li><a href ="https://www.instagram.com/barbaad_yaars?igsh=MXRnNWF0ZzJybjJubw==">Instagram</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright &copy; 2024 - B-HANZ</p>
+      </div>
+    </div>
+
+    <!-- js for toggle menu -->
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+      MenuItems.style.maxHeight = '0px';
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+  </body>
+</html>

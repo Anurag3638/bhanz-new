@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="W"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>B-HANZ</title>
+  </head>
+  <body>
+  <nav>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo3.png" alt="B-HANZ" width="125px" /></a>
+        </div>
+          <input type="text" id="search" name="search" placeholder="Search.."> 
+          <button type="submit" style="background-color: #ff523b;">Go</button>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        <a href="cart.html"></a>
+        <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" style="background-color:#ffffff;" alt="" width="30px" height="30px" /></a>
+        <a href="signup.html">
+          <button>Sign Up</button>
+        </a>
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        <a href="login.html">
+          <button>Login</button>
+        </a>
+      </div>
+    </div>
+  </nav>        
+    
+    <div class="item-body">  
+    {{#each nextData}}
+        <div class="widthlimit">
+          <div class="card">
+            <img src="{{image}}" class="card-img-top" alt="..." width="180" height="180">
+            <div class="card-body">
+              <h5 class="card-title">{{name}}</h5>
+              <p class="card-text">${{price}}<br>
+              Only {{countInStock}} left in stock
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+    {{/each}}
+    </div>
+
+
+
+
+    <div class="color-black">
+        <a href="/next?page={{nextPage}}">Next</a>  
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iso mobile phone.</p>
+            <div class="app-logo">
+              <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+              <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="img/logo.png" alt="" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href ="">Facebook</a></li>
+              <li><a href ="">Twitter</a></li>
+              <li><a href ="https://www.instagram.com/barbaad_yaars?igsh=MXRnNWF0ZzJybjJubw==">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright &copy; 2024 - B-HANZ</p>
+      </div>
+    </div>
+
+    <!-- js for toggle menu -->
+  </body>
+</html>

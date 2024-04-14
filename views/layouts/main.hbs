@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="W"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- <link rel="apple-touch-icon" href=""/> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>B-HANZ</title>
+  </head>
+  <body>
+  <nav>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo3.png" alt="B-HANZ" width="125px" /></a>
+        </div>
+          <input type="text" id="search" name="search" placeholder="Search.."> 
+          <button type="submit" style="background-color: #ff523b;">Go</button>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        <a href="cart.html"></a>
+        <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" style="background-color:#ffffff;" alt="" width="30px" height="30px" /></a>
+        <a href="signup.html">
+          <button>Sign Up</button>
+        </a>
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        <a href="login.html">
+          <button>Login</button>
+        </a>
+      </div>
+    </div>
+  </nav>        
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <h3><span>Discount: 20% off of our products</span></h3>
+        <a href="product.html" class="btn">Explore Now &#8594;</a>
+        <select>
+          <option value="">Default Shorting</option>
+          <option value="">Sort by price</option>
+          <option value="">Sort by popularity</option>
+          <option value="">Sort by rating</option>
+          <option value="">Sort by sale</option>
+        </select>
+      </div>
+    </div>
+    <div class="item-body">  
+    {{#each data}}
+        <div class="widthlimit">
+          <div class="card">
+            <img src="{{image}}" class="card-img-top" alt="..." width="180" height="180">
+            <div class="card-body">
+              <h5 class="card-title">{{name}}</h5>
+              <p class="card-text">${{price}}<br>
+              Only {{countInStock}} left in stock
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+    {{/each}}
+    </div>
+
+
+
+
+    <div class="color-black">
+        <a href="/next?page=2">Next</a>  
+    </div>
+
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iso mobile phone.</p>
+            <div class="app-logo">
+              <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+              <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="img/logo.png" alt="" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href ="">Facebook</a></li>
+              <li><a href ="">Twitter</a></li>
+              <li><a href ="https://www.instagram.com/barbaad_yaars?igsh=MXRnNWF0ZzJybjJubw==">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright &copy; 2024 - B-HANZ</p>
+      </div>
+    </div>
+
+    <!-- js for toggle menu -->
+  </body>
+</html>

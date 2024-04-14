@@ -1,0 +1,13 @@
+/* Add style for header */
+header {
+  background-color: #6f2020;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+/* Style for paragraph */
+p {
+  font-size: 18px;
+  color: #411515;
+  line-height: 1.6;
+}
