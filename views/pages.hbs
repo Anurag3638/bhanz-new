@@ -1,0 +1,24 @@
+{{>navbar}}    
+    <div class="item-body">  
+    {{#each nextData}}
+        <div class="widthlimit">
+          <div class="card">
+            <img src="{{image}}" class="card-img-top" alt="..." width="180" height="180">
+            <div class="card-body">
+              <h5 class="card-title">{{name}}</h5>
+              <p class="card-text">${{price}}<br>
+              Only {{countInStock}} left in stock
+              </p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+    {{/each}}
+    </div>
+
+<div class="color-black">
+  <a href="/next?page={{prevPage}}">PREVIOUS</a>
+  <a href="/next?page={{nextPage}}">NEXT</a>
+</div>
+
+{{>footer}}

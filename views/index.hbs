@@ -1,0 +1,44 @@
+{{> navbar }}
+
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="img/sale1.jpg" alt="Sale 1">
+    <div class="text">Sale 1: 50% off on all products!</div>
+  </div>
+
+  <div class="slide fade">
+    <img src="img/sale2.jpg" alt="Sale 2">
+    <div class="text">Sale 2: Buy one get one free!</div>
+  </div>
+
+  <div class="slide fade">
+    <img src="img/sale3.jpg" alt="Sale 3">
+    <div class="text">Sale 3: Limited time offer - 30% off on selected items!</div>
+  </div>
+
+  <!-- Add more slides here -->
+
+  <a class="prev-sale" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next-sale" onclick="changeSlide(1)">&#10095;</a>
+</div>
+<div class="item-body">
+  {{#each data}}
+  <div class="widthlimit">
+    <div class="card">
+      <img src="{{image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">${{price}}<br>
+          Only {{countInStock}} left in stock
+        </p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<div class="color-black">
+  <a href="/next?page=2">Next</a>
+</div>
+{{>footer}}
