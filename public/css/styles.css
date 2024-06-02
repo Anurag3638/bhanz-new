@@ -86,7 +86,9 @@ a {
   height: 90px;
   width: 290px;
 }
-
+.user{
+  color: white;
+}
 .container {
   width: 100vw;
   background-color: #231f1f;

@@ -1,3 +1,69 @@
-<p>
-    hello {{username}}
-</p>
+<nav>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="/"><img src="img/logo3.png" alt="B-HANZ" width="125px" /></a>
+      </div>
+      <input type="text" id="search" name="search" placeholder="Search..">
+      <button type="submit" class="search-button">Go</button>
+      <ul id="MenuItems">
+        <li><a href="/">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+      <a href="cart.html"></a>
+      <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" style="background-color:#ffffff;" alt=""
+          width="30px" height="30px" /></a>
+      <section>
+        <div class="user">
+            {{username}}
+        </div>
+      </section>
+    </div>
+  </div>
+</nav>
+
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="img/sale1.jpg" alt="Sale 1">
+    <div class="text">Sale 1: 50% off on all products!</div>
+  </div>
+
+  <div class="slide fade">
+    <img src="img/sale2.jpg" alt="Sale 2">
+    <div class="text">Sale 2: Buy one get one free!</div>
+  </div>
+
+  <div class="slide fade">
+    <img src="img/sale3.jpg" alt="Sale 3">
+    <div class="text">Sale 3: Limited time offer - 30% off on selected items!</div>
+  </div>
+
+  <!-- Add more slides here -->
+
+  <a class="prev-sale" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next-sale" onclick="changeSlide(1)">&#10095;</a>
+</div>
+<div class="item-body">
+  {{#each data}}
+  <div class="widthlimit">
+    <div class="card">
+      <img src="{{image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">${{price}}<br>
+          Only {{countInStock}} left in stock
+        </p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<div class="color-black">
+  <a href="/next?page=2">Next</a>
+</div>
+{{>footer}}
